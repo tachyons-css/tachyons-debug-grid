@@ -8,18 +8,34 @@
 
 */
 
+/* variables */
+:root {
+
+  --lightest-blue: #cdecff;
+  --white: #fff;
+
+}
+
 .debug-grid {
-  background:transparent url(http://tachyons.io/img/8-grid-blue-alpha.png) repeat top left;
+  background-image:
+    repeating-linear-gradient(to right, transparent, transparent 7px, var(--lightest-blue) 7px, var(--lightest-blue) 8px),
+    repeating-linear-gradient(to bottom, transparent, transparent 7px, var(--lightest-blue) 7px, var(--lightest-blue) 8px);
 }
 
 .debug-grid-16 {
-  background:transparent url(http://tachyons.io/img/16-grid-blue-alpha.png) repeat top left;
+  background-image:
+    repeating-linear-gradient(to right, transparent, transparent 15px, var(--lightest-blue) 15px, var(--lightest-blue) 16px),
+    repeating-linear-gradient(to bottom, transparent, transparent 15px, var(--lightest-blue) 15px, var(--lightest-blue) 16px);
 }
 
 .debug-grid-8-solid {
-  background:white url(http://tachyons.io/img/8-grid.jpg) repeat top left;
+  background-image:
+    repeating-linear-gradient(to right, var(--white), var(--white) 7px, var(--lightest-blue) 7px, var(--lightest-blue) 8px),
+    repeating-linear-gradient(to bottom, var(--white), var(--white) 7px, var(--lightest-blue) 7px, var(--lightest-blue) 8px);
 }
 
 .debug-grid-16-solid {
-  background:white url(http://tachyons.io/img/16-grid.png) repeat top left;
+  background-image:
+    repeating-linear-gradient(to right, var(--white), var(--white) 15px, var(--lightest-blue) 15px, var(--lightest-blue) 16px),
+    repeating-linear-gradient(to bottom, var(--white), var(--white) 15px, var(--lightest-blue) 15px, var(--lightest-blue) 16px);
 }
