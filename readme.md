@@ -4,7 +4,7 @@ Base CSS module for Tachyons
 
 #### Stats
 
-355 | 4 | 8
+336 | 4 | 10
 ---|---|---
 bytes | selectors | declarations
 
@@ -86,8 +86,8 @@ Running `$ npm start` will process the source css and place the built css in the
 /* variables */
 .debug-grid { background-image: -webkit-repeating-linear-gradient( left, transparent, transparent 7px, #cdecff 8px ), -webkit-repeating-linear-gradient( top, transparent, transparent 7px, #cdecff 8px ); background-image: repeating-linear-gradient( to right, transparent, transparent 7px, #cdecff 8px ), repeating-linear-gradient( to bottom, transparent, transparent 7px, #cdecff 8px ); }
 .debug-grid-16 { background-image: -webkit-repeating-linear-gradient( left, transparent, transparent 15px, #cdecff 16px ), -webkit-repeating-linear-gradient( top, transparent, transparent 15px, #cdecff 16px ); background-image: repeating-linear-gradient( to right, transparent, transparent 15px, #cdecff 16px ), repeating-linear-gradient( to bottom, transparent, transparent 15px, #cdecff 16px ); }
-.debug-grid-8-solid { background-image: -webkit-repeating-linear-gradient( left, #fff, #fff 7px, #cdecff 8px ), -webkit-repeating-linear-gradient( top, #fff, #fff 7px, #cdecff 8px ); background-image: repeating-linear-gradient( to right, #fff, #fff 7px, #cdecff 8px ), repeating-linear-gradient( to bottom, #fff, #fff 7px, #cdecff 8px ); }
-.debug-grid-16-solid { background-image: -webkit-repeating-linear-gradient( left, #fff, #fff 15px, #cdecff 16px ), -webkit-repeating-linear-gradient( top, #fff, #fff 15px, #cdecff 16px ); background-image: repeating-linear-gradient( to right, #fff, #fff 15px, #cdecff 16px ), repeating-linear-gradient( to bottom, #fff, #fff 15px, #cdecff 16px ); }
+.debug-grid-8-solid { background: #fff; background-image: -webkit-repeating-linear-gradient( left, transparent, transparent 7px, #cdecff 8px ), -webkit-repeating-linear-gradient( top, transparent, transparent 7px, #cdecff 8px ); background-image: repeating-linear-gradient( to right, transparent, transparent 7px, #cdecff 8px ), repeating-linear-gradient( to bottom, transparent, transparent 7px, #cdecff 8px ); }
+.debug-grid-16-solid { background: #fff; background-image: -webkit-repeating-linear-gradient( left, transparent, transparent 15px, #cdecff 16px ), -webkit-repeating-linear-gradient( top, transparent, transparent 15px, #cdecff 16px ); background-image: repeating-linear-gradient( to right, transparent, transparent 15px, #cdecff 16px ), repeating-linear-gradient( to bottom, transparent, transparent 15px, #cdecff 16px ); }
 ```
 
 ## Contributing
