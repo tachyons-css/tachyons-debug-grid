@@ -1,10 +1,10 @@
-# tachyons-debug-grid 1.0.0
+# tachyons-debug-grid 1.0.1
 
 Base CSS module for Tachyons
 
 #### Stats
 
-267 | 4 | 4
+345 | 4 | 8
 ---|---|---
 bytes | selectors | declarations
 
@@ -55,7 +55,7 @@ $ tachyons path/to/css-file.css > dist/t.css
 The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
 
 ```
-<link rel="stylesheet" href="http://unpkg.com/tachyons-debug-grid@1.0.0/css/tachyons-debug-grid.min.css" />
+<link rel="stylesheet" href="http://unpkg.com/tachyons-debug-grid@1.0.1/css/tachyons-debug-grid.min.css" />
 ```
 
 ##### Locally
@@ -83,10 +83,11 @@ Running `$ npm start` will process the source css and place the built css in the
    Just tack one of these classes onto a parent element.
 
 */
-.debug-grid { background: transparent url( http://tachyons.io/img/8-grid-blue-alpha.png ) repeat top left; }
-.debug-grid-16 { background: transparent url( http://tachyons.io/img/16-grid-blue-alpha.png ) repeat top left; }
-.debug-grid-8-solid { background: white url( http://tachyons.io/img/8-grid.jpg ) repeat top left; }
-.debug-grid-16-solid { background: white url( http://tachyons.io/img/16-grid.png ) repeat top left; }
+/* variables */
+.debug-grid { background-image: -webkit-repeating-linear-gradient( left, transparent, transparent 7px, #cdecff 8px ), -webkit-repeating-linear-gradient( top, transparent, transparent 7px, #cdecff 8px ); background-image: repeating-linear-gradient( to right, transparent, transparent 7px, #cdecff 8px ), repeating-linear-gradient( to bottom, transparent, transparent 7px, #cdecff 8px ); }
+.debug-grid-16 { background-image: -webkit-repeating-linear-gradient( left, transparent, transparent 15px, #cdecff 16px ), -webkit-repeating-linear-gradient( top, transparent, transparent 15px, #cdecff 16px ); background-image: repeating-linear-gradient( to right, transparent, transparent 15px, #cdecff 16px ), repeating-linear-gradient( to bottom, transparent, transparent 15px, #cdecff 16px ); }
+.debug-grid-8-solid { background-image: -webkit-repeating-linear-gradient( left, transparent, transparent 7px, #cdecff 8px ), -webkit-repeating-linear-gradient( top, #fff, #fff 7px, #cdecff 8px ); background-image: repeating-linear-gradient( to right, transparent, transparent 7px, #cdecff 8px ), repeating-linear-gradient( to bottom, #fff, #fff 7px, #cdecff 8px ); }
+.debug-grid-16-solid { background-image: -webkit-repeating-linear-gradient( left, transparent, transparent 15px, #cdecff 16px ), -webkit-repeating-linear-gradient( top, #fff, #fff 15px, #cdecff 16px ); background-image: repeating-linear-gradient( to right, transparent, transparent 15px, #cdecff 16px ), repeating-linear-gradient( to bottom, #fff, #fff 15px, #cdecff 16px ); }
 ```
 
 ## Contributing
