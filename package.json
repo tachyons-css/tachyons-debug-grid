@@ -21,8 +21,8 @@
   "repository": "tachyons-css/tachyons-debug-grid",
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.5",
-    "watch": "^0.19.1"
+    "tachyons-cli": "^1.0.9",
+    "watch": "^1.0.1"
   },
   "scripts": {
     "start": "npm run build:watch",
